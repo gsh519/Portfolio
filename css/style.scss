@@ -1,0 +1,334 @@
+@charset 'utf-8';
+
+
+
+//ヘッダー
+header {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/40/coffee-690054_1280.jpg);
+  .container {
+    .hero {
+      text-align: center;
+      h1 {
+        font-size: 80px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 30px;
+        margin-bottom: 60px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+//ハンバーガーメニュー
+#humbergar {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background-color: #333333;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-radius: 20%;
+  z-index: 2;
+  div {
+    height: 1px;
+    width: 40%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    &:nth-of-type(1) {
+      transform: translate(0, -8px);
+      transition: .3s;
+    }
+    &:nth-of-type(2) {
+      transition: .1s;
+    }
+    &:nth-of-type(3) {
+      transform: translate(0,8px);
+      transition: .3s;
+    }
+  }
+}
+
+#humbergar.active {
+  div {
+    &:nth-of-type(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+    &:nth-of-type(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+//ナブバー
+#navbar {
+  background-color: #1d809f;
+  width: 200px;
+  position: fixed;
+  top: 80px;
+  left: -200px;
+  z-index: 2;
+  transition: .7s;
+  h3 {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    background-color: #155d74;
+  }
+  ul {
+    li {
+      &:hover {
+        background-color: rgba(255, 255, 255, .2);
+      }
+      a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+#navbar.active {
+  left: 0;
+  transition: 0.7s;
+}
+
+
+
+//ボタン
+.btn {
+  padding: 15px 25px;
+  background-color: #1d809f;
+  border-color: #1d809f;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+  font-weight: bold;
+  &:hover {
+    background-color: #155d74;
+    border-color: #155d74;
+  }
+}
+
+.content {
+  text-align: center;
+  small {
+    color: #ecb807;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 50px;
+    margin: 10px 0 60px;
+    font-weight: bold;
+  }
+}
+
+//自己紹介
+#About {
+  padding: 130px 0;
+  .container {
+    text-align: center;
+    .row {
+      .About_img {
+        padding: 40px;
+        span {
+          display: inline-block;
+          .myface {
+            border-radius: 50%;
+          }
+        }
+      }
+      .About_background {
+        padding: 40px;
+        ul {
+          list-style: disc;
+          float: left;
+          li {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 25px;
+            line-height: 1.5;
+            strong {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//スキル
+#Skill {
+  padding: 130px 0;
+  background-color: #1d809f;
+  color: #fff;
+  .container {
+    text-align: center;
+    .row {
+      .item {
+        margin-bottom: 50px;
+        span {
+          display: inline-block;
+          margin-bottom: 25px;
+          .fab {
+            font-size: 120px;  //08037909628
+          }
+        }
+        h3 {
+          margin-bottom: 25px;
+          font-weight: bold;
+          font-size: 25px;
+        }
+        p {
+          line-height: 1.5;
+        }
+      }
+    }
+    .skill_contact {
+      background-color: #fff;
+      color: #000;
+      &:hover {
+        background-color: #eee;
+        border-color: #eee;
+      }
+    }
+  }
+}
+
+
+//今後
+#After {
+  padding: 130px 0;
+  text-align: center;
+  .angular {
+    max-width: 500px;
+    margin: 0 auto;
+    span {
+      display: inline-block;
+      margin-bottom: 15px;
+      .fab {
+        font-size: 170px;
+      }
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 60px;
+      line-height: 1.5;
+    }
+  }
+  a {
+    background-color: #343a40;
+    border-color: #343a40;
+    :hover {
+      background-color: #000;
+      border-color: #000;
+    }
+  }
+}
+
+//お問い合わせ
+#Contact {
+  background-color: #f8f9fa;
+  padding: 90px 0;
+  position: relative;
+  .container {
+    text-align: center;
+    p {
+      margin-bottom: 20px;
+    }
+    .sns {
+      display: flex;
+      justify-content: center;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 20px;
+        margin: 10px 10px 40px 10px;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+        height: 70px;
+      }
+    }
+    .copyright {
+      font-size: 12px;
+    }
+  }
+}
+
+
+//ページトップスクロール
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #1d809f;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 30px;
+  &:hover {
+    text-decoration: none;
+    background-color: #155d74;
+    color: #fff;
+  }
+}
+
+
+//SP
+@media screen and (max-width: 768px) {
+  #humbergar {
+    width: 50px;
+    height: 50px;
+  }
+
+  #header {
+    background-position: right bottom;
+    background-size: cover;
+    .hero {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .content {
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+  .top {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+

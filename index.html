@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
+  <!-- fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.min.css">
+  
+
+  
+</head>
+<body>
+  <!-- ハンバーガー -->
+  <a id="humbergar">
+    <div></div>
+    <div></div>
+    <div></div>
+  </a>
+  <!-- ナビバー -->
+  <nav id="navbar">
+    <h3>Portfolio</h3>
+    <ul>
+      <li><a href="#header">Top</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Skill">Skill</a></li>
+      <li><a href="#After">After</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="container">
+      <div class="hero">
+        <h1>Portfolio</h1>
+        <p>to be enjineer</p>
+        <a class="btn btn-primary" href="#About" role="button">Who's ME?</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- 自己紹介 -->
+    <div id="About">
+      <div class="container">
+        <div class="content">
+          <small>ABOUT</small>
+          <h2>自己紹介</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 About_img">
+            <span>
+              <img src="https://placehold.jp/150x150.png" alt="画像" class="myface">
+            </span>
+          </div>
+          <div class="col-md-6 About_background">
+            <ul>
+              <li><strong>名前</strong>：　江口 悠斗</li>
+              <li><strong>年齢</strong>：　21歳</li>
+              <li><strong>出身</strong>：　兵庫県</li>
+              <li><strong>学歴</strong>：　関西大学 商学部</li>
+              <li><strong>プログラミングをはじめたきっかけ</strong>：
+                大学２年生の夏に毎日ダラダラしている生活に焦りを感じはじめ、
+                なにかスキルを身に着けたいと思い、調べていた時に初めてプログラミングがあるということを知った。そしてProgateでプログラミングを初めて触り面白いと感じ、大学３年の春休みからテックアカデミーに通い本格的に勉強るようになった。今は将来エンジニアになるために勉強中。
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="#Skill" role="button">スキル</a>
+      </div>
+    </div>
+    <!-- スキル -->
+    <div id="Skill">
+      <div class="container">
+        <div class="content">
+          <small>Skill</small>
+          <h2>スキル</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 item">
+            <span>
+              <i class="fab fa-html5"></i>
+            </span>
+            <h3>HTML&CSS</h3>
+            <p>HTML&CSSを使ったコーディングができます。またCSSはSCSSを使ってコーディングしています。</p>
+          </div>
+          <div class="col-lg-4 item">
+            <span>
+              <i class="fab fa-js-square"></i>
+            </span>
+            <h3>JavaScript</h3>
+            <p>JavaScriptを使って動きのあるサイトを作れます。特にjQueryを使ってコーディングしていきます。</p>
+          </div>
+          <div class="col-lg-4 item">
+            <span>
+              <i class="fab fa-wordpress"></i>
+            </span>
+            <h3>WordPress</h3>
+            <p>WordPressを導入できます。ブログなどをWordPressを使って作ることができます。</p>
+          </div>
+        </div>
+        <a class="btn btn-primary skill_contact" href="#After" role="button">After</a>
+      </div>
+    </div>
+    <!-- after -->
+    <div id="After">
+      <div class="content">
+        <small>After</small>
+        <h2>今後について</h2>
+      </div>
+      <div class="container">
+        <div class="angular">
+          <span>
+            <i class="fab fa-angular"></i>
+          </span>
+          <h3>Frontend</h3>
+          <p>今後はJavaScriptのフレームワークやライブラリーであるAngularやReactを学び、Firebaseなどと連携してフロントエンドだけでWebアプリケーションを作れるようになります。</p>
+        </div>
+        <a class="btn btn-primary" href="#Contact" role="button">Contact</a>
+      </div>
+    </div>
+    <!-- お問い合わせ -->
+    <div id="Contact">
+      <div class="content">
+        <small>Contact</small>
+        <h2>SNS</h2>
+      </div>
+      <div class="container">
+        <p>SNSはじめました。Githubも少しずつ更新していきます。</p>
+        <div class="sns">
+          <a class="btn btn-primary" href="mailto:gsh05196yu@yahoo.co.jp" role="button">
+            <i class="far fa-envelope"></i>
+          </a>
+          <a class="btn btn-primary" href="https://twitter.com/yuto_05196" role="button">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="btn btn-primary" href="https://github.com/gsh519/" role="button">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="copyright">Copyright © EGUCHI portfolio 2020</div>
+      </div>
+      <a href="#header" class="top">↑</a>
+    </div>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- script js -->
+  <script src="script.js"></script>
+</body>
+</html>
