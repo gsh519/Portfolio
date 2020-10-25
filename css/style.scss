@@ -8,6 +8,9 @@ header {
   place-items: center;
   height: 100vh;
   background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/40/coffee-690054_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
   .container {
     .hero {
       text-align: center;
@@ -146,11 +149,13 @@ header {
     text-align: center;
     .row {
       .About_img {
-        padding: 40px;
+        padding: 100px 40px 40px 40px;
         span {
           display: inline-block;
           .myface {
             border-radius: 50%;
+            max-width: 250px;
+            height: auto;
           }
         }
       }
@@ -318,6 +323,10 @@ header {
     }
   }
 
+  #About .container .row .About_img {
+    padding: 15px;
+  }
+
   .content {
     h2 {
       font-size: 40px;
@@ -331,4 +340,5 @@ header {
     height: 40px;
   }
 }
+
 

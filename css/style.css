@@ -3,6 +3,9 @@ header {
   place-items: center;
   height: 100vh;
   background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/40/coffee-690054_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 header .container .hero {
@@ -141,7 +144,7 @@ header .container .hero p {
 }
 
 #About .container .row .About_img {
-  padding: 40px;
+  padding: 100px 40px 40px 40px;
 }
 
 #About .container .row .About_img span {
@@ -150,6 +153,8 @@ header .container .hero p {
 
 #About .container .row .About_img span .myface {
   border-radius: 50%;
+  max-width: 250px;
+  height: auto;
 }
 
 #About .container .row .About_background {
@@ -321,6 +326,9 @@ header .container .hero p {
   }
   #header .hero h1 {
     font-size: 50px;
+  }
+  #About .container .row .About_img {
+    padding: 15px;
   }
   .content h2 {
     font-size: 40px;
